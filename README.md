@@ -73,3 +73,29 @@ A successful compile does not imply successful timing: inspect the retained
 Training data and checkpoints are not needed to rerun this fixed-export hardware
 experiment. Reproducing training follows the repository's main reproducibility
 instructions and the datasets' original access conditions.
+
+## Withheld file
+
+`generated/r_tc_fabs_nfbot/full_inputs.hex` is not published here. It holds the
+10,000 binarized input vectors used to drive the RTL testbenches, derived from
+NF-BoT-IoT-v3, and is withheld so that nothing derived from that dataset is
+redistributed. The dataset itself is available from its original providers
+(Sarhan et al., NetFlow Datasets for Machine Learning-Based Network Intrusion
+Detection Systems).
+
+Consequences for anyone re-running this repository:
+
+- `tb_skip.sv`, `tb_resume.sv`, `tb_power.sv` and `verify_verilator.cpp` all
+  read that file, so the full 10,000-vector equivalence run cannot be
+  reproduced from the repository as published.
+- `check_integer_skip.py`, `pilot_decision_bounds.py` and
+  `screen_certified_structure.py` reference it for the same reason.
+- `SHA256SUMS.json` still carries its digest, so the checksum manifest will
+  report one missing file.
+- Everything else — the RTL sources, the exported mask, threshold and schedule
+  memories, the Quartus project, the fitter and timing reports, and
+  `full_expected_dense.hex` / `full_expected_sparse.hex` — is complete.
+
+The vectors can be regenerated from the cited dataset using the binarization
+and endpoint-pair split described in the paper. They are available from the
+author on request.

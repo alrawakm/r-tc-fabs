@@ -1,0 +1,26 @@
+{
+  "checkpoint": "C:\\Users\\User\\Documents\\Codex\\2026-08-05\\c\\work\\ieee_access_revision\\experiment\\checkpoints\\nf_bot_iot_strict_xnor_heldout\\nf_bot_iot_v3_strict_xnor_heldout__r_tc_fabs__seed_17.pt",
+  "input_scale": 16,
+  "layer0_feature_operations": 12544,
+  "schedule_entries": 417,
+  "schedule_entries_by_layer": {
+    "1": 352,
+    "2": 64,
+    "3": 1
+  },
+  "active_weights": [
+    8192,
+    11264,
+    1792,
+    32
+  ],
+  "total_weights": [
+    12544,
+    32768,
+    8192,
+    64
+  ],
+  "output_threshold": -3,
+  "probability_threshold": 0.02598118595778942,
+  "logit_threshold": -3.6240579606448553
+}

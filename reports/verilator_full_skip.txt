@@ -1,0 +1,11 @@
+PROGRESS checked=1000 mismatches=0
+PROGRESS checked=2000 mismatches=0
+PROGRESS checked=3000 mismatches=0
+PROGRESS checked=4000 mismatches=0
+PROGRESS checked=5000 mismatches=0
+PROGRESS checked=6000 mismatches=0
+PROGRESS checked=7000 mismatches=0
+PROGRESS checked=8000 mismatches=0
+PROGRESS checked=9000 mismatches=0
+PROGRESS checked=10000 mismatches=0
+PASS vectors=10000 mismatches=0 cycles_per_inference=10116

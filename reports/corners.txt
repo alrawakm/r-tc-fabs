@@ -1,0 +1,16 @@
+PASS corner_mask=0 direction=0 skip_cycles=10085 baseline_cycles=14468
+PASS corner_mask=0 direction=1 skip_cycles=10085 baseline_cycles=14468
+PASS corner_mask=1 direction=0 skip_cycles=10085 baseline_cycles=14468
+PASS corner_mask=1 direction=1 skip_cycles=10085 baseline_cycles=14468
+PASS corner_mask=2 direction=0 skip_cycles=10085 baseline_cycles=14468
+PASS corner_mask=2 direction=1 skip_cycles=10085 baseline_cycles=14468
+PASS corner_mask=3 direction=0 skip_cycles=10085 baseline_cycles=14468
+PASS corner_mask=3 direction=1 skip_cycles=10085 baseline_cycles=14468
+PASS corner_mask=4 direction=0 skip_cycles=10133 baseline_cycles=14468
+PASS corner_mask=4 direction=1 skip_cycles=10133 baseline_cycles=14468
+PASS corner_mask=5 direction=0 skip_cycles=10109 baseline_cycles=14468
+PASS corner_mask=5 direction=1 skip_cycles=10109 baseline_cycles=14468
+PASS corner_mask=6 direction=0 skip_cycles=10133 baseline_cycles=14468
+PASS corner_mask=6 direction=1 skip_cycles=10133 baseline_cycles=14468
+PASS next_active_checks=448 full_controller_corner_cases=14
+tb_corners.sv:58: $finish called at 2026080000 (1ps)

@@ -1,0 +1,3 @@
+VCD info: dumpfile baseline_activity.vcd opened for output.
+PASS power_vectors=32 cycles=14468 half_period_ns=6.667
+tb_power.sv:33: $finish called at 6174202028 (1ps)

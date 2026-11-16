@@ -1,0 +1,14 @@
+{
+  "scope": "independent integer and schedule analysis; RTL simulation blocked by Questa license",
+  "vectors": 10000,
+  "first_layer_sum_mismatches": 0,
+  "final_prediction_mismatches": 0,
+  "schedule_entries": 417,
+  "first_layer_active_weights": 8192,
+  "empty_first_layer_neurons": 0,
+  "original_cycles": 14468,
+  "predicted_skip_cycles": 10116,
+  "predicted_cycle_reduction": 0.30080176942217307,
+  "source_sha256": "011f1a1e20468ff485df324dd58b0aa85664419ce8993532f517fabaf2893e10",
+  "qualification": "No measured timing, fitted resource or power improvement established"
+}

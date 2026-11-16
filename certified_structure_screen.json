@@ -1,0 +1,39 @@
+{
+  "scope": "Conservative interval and dependency screening over all signed-int8 inputs. No training or test samples used.",
+  "layers": [
+    {
+      "layer": 0,
+      "neurons": 256,
+      "provably_constant": 0,
+      "required_nonconstant": 256,
+      "not_required": 0
+    },
+    {
+      "layer": 1,
+      "neurons": 128,
+      "provably_constant": 0,
+      "required_nonconstant": 96,
+      "not_required": 32
+    },
+    {
+      "layer": 2,
+      "neurons": 64,
+      "provably_constant": 8,
+      "required_nonconstant": 32,
+      "not_required": 32
+    },
+    {
+      "layer": 3,
+      "neurons": 1,
+      "provably_constant": 0,
+      "required_nonconstant": 1,
+      "not_required": 0
+    }
+  ],
+  "schedule_entries": 417,
+  "removable_schedule_entries": 104,
+  "modeled_cycles_saved_at_four_cycles_per_entry": 416,
+  "regression_vectors": 10000,
+  "regression_prediction_mismatches": 0,
+  "qualification": "Structure selection is data-free; retained vectors used only for regression. Dead-code elimination is known. No hardware savings or novelty established."
+}

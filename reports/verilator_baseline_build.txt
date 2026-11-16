@@ -1,0 +1,66 @@
+%Warning-WIDTH: matched_baseline/tc_fabs_skip_network.sv:102:39: Operator ADD expects 6 bits on the RHS, but RHS's SEL generates 1 bits.
+                                                               : ... In instance skip_top.engine
+  102 |             match_count = match_count + xnor_word[bit_index];
+      |                                       ^
+                ... Use "/* verilator lint_off WIDTH */" and lint_on around source to disable this message.
+%Warning-WIDTH: matched_baseline/tc_fabs_skip_network.sv:104:48: Operator SUB expects 32 bits on the LHS, but LHS's SIGNED generates 8 bits.
+                                                               : ... In instance skip_top.engine
+  104 |             $signed({1'b0, match_count, 1'b0}) - 32'sd32 : 32'sd0;
+      |                                                ^
+%Warning-WIDTH: matched_baseline/tc_fabs_skip_network.sv:105:26: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's SIGNED generates 8 bits.
+                                                               : ... In instance skip_top.engine
+  105 |         l0_feature_value = $signed(features_q[l0_feature * 8 +: 8]);
+      |                          ^
+%Warning-WIDTH: matched_baseline/tc_fabs_skip_network.sv:209:49: Bit extraction of var[127:0] requires 7 bit index, not 8 bits.
+                                                               : ... In instance skip_top.engine
+  209 |                                     activation_1[schedule_neuron_q] <=
+      |                                                 ^
+%Warning-WIDTH: matched_baseline/tc_fabs_skip_network.sv:211:61: Bit extraction of array[127:0] requires 7 bit index, not 8 bits.
+                                                               : ... In instance skip_top.engine
+  211 |                                          l1_threshold_memory[schedule_neuron_q]);
+      |                                                             ^
+%Warning-WIDTH: matched_baseline/tc_fabs_skip_network.sv:213:49: Bit extraction of var[127:0] requires 7 bit index, not 8 bits.
+                                                               : ... In instance skip_top.engine
+  213 |                                     activation_1[schedule_neuron_q] <=
+      |                                                 ^
+%Warning-WIDTH: matched_baseline/tc_fabs_skip_network.sv:215:61: Bit extraction of array[127:0] requires 7 bit index, not 8 bits.
+                                                               : ... In instance skip_top.engine
+  215 |                                          l1_threshold_memory[schedule_neuron_q]);
+      |                                                             ^
+%Warning-WIDTH: matched_baseline/tc_fabs_skip_network.sv:208:56: Bit extraction of array[127:0] requires 7 bit index, not 8 bits.
+                                                               : ... In instance skip_top.engine
+  208 |                                 if (l1_direction_memory[schedule_neuron_q])
+      |                                                        ^
+%Warning-WIDTH: matched_baseline/tc_fabs_skip_network.sv:219:49: Bit extraction of var[63:0] requires 6 bit index, not 8 bits.
+                                                               : ... In instance skip_top.engine
+  219 |                                     activation_2[schedule_neuron_q] <=
+      |                                                 ^
+%Warning-WIDTH: matched_baseline/tc_fabs_skip_network.sv:221:61: Bit extraction of array[63:0] requires 6 bit index, not 8 bits.
+                                                               : ... In instance skip_top.engine
+  221 |                                          l2_threshold_memory[schedule_neuron_q]);
+      |                                                             ^
+%Warning-WIDTH: matched_baseline/tc_fabs_skip_network.sv:223:49: Bit extraction of var[63:0] requires 6 bit index, not 8 bits.
+                                                               : ... In instance skip_top.engine
+  223 |                                     activation_2[schedule_neuron_q] <=
+      |                                                 ^
+%Warning-WIDTH: matched_baseline/tc_fabs_skip_network.sv:225:61: Bit extraction of array[63:0] requires 6 bit index, not 8 bits.
+                                                               : ... In instance skip_top.engine
+  225 |                                          l2_threshold_memory[schedule_neuron_q]);
+      |                                                             ^
+%Warning-WIDTH: matched_baseline/tc_fabs_skip_network.sv:218:56: Bit extraction of array[63:0] requires 6 bit index, not 8 bits.
+                                                               : ... In instance skip_top.engine
+  218 |                                 if (l2_direction_memory[schedule_neuron_q])
+      |                                                        ^
+%Warning-WIDTH: matched_baseline/tc_fabs_skip_network.sv:236:40: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'schedule_index' generates 9 bits.
+                                                               : ... In instance skip_top.engine
+  236 |                     if (schedule_index == SCHEDULE_ENTRIES - 1) begin
+      |                                        ^~
+make: Entering directory '/mnt/c/Users/User/Documents/Codex/2026-09-06/th/work/verilated_baseline'
+g++  -I.  -MMD -I/mnt/c/Users/User/Documents/Codex/2026-09-06/th/work/verilator/usr/share/verilator/include -I/mnt/c/Users/User/Documents/Codex/2026-09-06/th/work/verilator/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow      -Os -c -o verify_verilator.o /mnt/c/Users/User/Documents/Codex/2026-08-10/c/work/rtcfabs_skip_rtl/verify_verilator.cpp
+g++  -I.  -MMD -I/mnt/c/Users/User/Documents/Codex/2026-09-06/th/work/verilator/usr/share/verilator/include -I/mnt/c/Users/User/Documents/Codex/2026-09-06/th/work/verilator/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow      -Os -c -o verilated.o /mnt/c/Users/User/Documents/Codex/2026-09-06/th/work/verilator/usr/share/verilator/include/verilated.cpp
+/usr/bin/perl /mnt/c/Users/User/Documents/Codex/2026-09-06/th/work/verilator/usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vskip_top.cpp Vskip_top__Slow.cpp Vskip_top__Syms.cpp > Vskip_top__ALL.cpp
+g++  -I.  -MMD -I/mnt/c/Users/User/Documents/Codex/2026-09-06/th/work/verilator/usr/share/verilator/include -I/mnt/c/Users/User/Documents/Codex/2026-09-06/th/work/verilator/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow      -Os -c -o Vskip_top__ALL.o Vskip_top__ALL.cpp
+ar -cr Vskip_top__ALL.a Vskip_top__ALL.o
+ranlib Vskip_top__ALL.a
+g++    verify_verilator.o verilated.o Vskip_top__ALL.a      -o Vskip_top
+make: Leaving directory '/mnt/c/Users/User/Documents/Codex/2026-09-06/th/work/verilated_baseline'

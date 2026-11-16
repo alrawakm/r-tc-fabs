@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-06",
+  "device": "5CSEMA5F31C6",
+  "quartus": "25.1std.0 Build 1129",
+  "frequency_mhz": 75,
+  "vcd_half_period_ns": 6.667,
+  "vcd_vectors": 32,
+  "rtl_vectors_per_controller": 10000,
+  "physical_board": false,
+  "variants": {
+    "baseline": {
+      "cycles": 14468,
+      "latency_us": 192.90666666666667,
+      "alms": 1153,
+      "registers": 633,
+      "memory_bits": 52367,
+      "ram_blocks": 7,
+      "dsp_blocks": 0,
+      "timing_slack_ns": {
+        "setup": {
+          "6_slow_1100mv_0c": 0.775,
+          "6_slow_1100mv_85c": 0.877,
+          "MIN_fast_1100mv_0c": 6.477,
+          "MIN_fast_1100mv_85c": 5.977
+        },
+        "hold": {
+          "6_slow_1100mv_0c": 0.294,
+          "6_slow_1100mv_85c": 0.314,
+          "MIN_fast_1100mv_0c": 0.169,
+          "MIN_fast_1100mv_85c": 0.179
+        }
+      },
+      "total_power_mw": 427.08,
+      "dynamic_power_mw": 7.39,
+      "static_power_mw": 411.34,
+      "power_confidence": "Low",
+      "simulation_toggle_coverage_percent": 35.1,
+      "total_energy_uj": 82.3865792,
+      "dynamic_energy_uj": 1.4255802666666666
+    },
+    "skip": {
+      "cycles": 10116,
+      "latency_us": 134.88,
+      "alms": 1401,
+      "registers": 634,
+      "memory_bits": 52367,
+      "ram_blocks": 7,
+      "dsp_blocks": 0,
+      "timing_slack_ns": {
+        "setup": {
+          "6_slow_1100mv_0c": 0.303,
+          "6_slow_1100mv_85c": 0.439,
+          "MIN_fast_1100mv_0c": 6.292,
+          "MIN_fast_1100mv_85c": 5.819
+        },
+        "hold": {
+          "6_slow_1100mv_0c": 0.354,
+          "6_slow_1100mv_85c": 0.366,
+          "MIN_fast_1100mv_0c": 0.172,
+          "MIN_fast_1100mv_85c": 0.181
+        }
+      },
+      "total_power_mw": 431.77,
+      "dynamic_power_mw": 12.05,
+      "static_power_mw": 411.36,
+      "power_confidence": "Low",
+      "simulation_toggle_coverage_percent": 30.2,
+      "total_energy_uj": 58.2371376,
+      "dynamic_energy_uj": 1.625304
+    }
+  },
+  "change_percent": {
+    "cycles": -30.080176942217307,
+    "alms": 21.509106678230694,
+    "dynamic_power_mw": 63.05818673883628,
+    "total_power_mw": 1.098154912428595,
+    "total_energy_uj": -29.312348970546896,
+    "dynamic_energy_uj": 14.00999564902321
+  },
+  "limitations": [
+    "One retained seed-17 model; no new training or multi-seed hardware generalization.",
+    "RTL-level VCD from first 32 retained inputs; substantial combinational activity inferred by Quartus.",
+    "Total estimated energy includes whole-device static power during active controller time; it is not marginal dynamic energy or board energy.",
+    "Both original 80-MHz routed fits fail setup under matched settings; 75-MHz reanalysis passes all four available setup and hold corners.",
+    "External interfaces, feature extraction, HPS power and host transfer are outside the evaluated core boundary."
+  ],
+  "sha256": {
+    "tc_fabs_skip_network.sv": "011f1a1e20468ff485df324dd58b0aa85664419ce8993532f517fabaf2893e10",
+    "matched_baseline/tc_fabs_skip_network.sv": "28177aefb91742d01ff702f4c3ddd2013f82b2cce003616884c045c448ff2cb6",
+    "verify_verilator.cpp": "21c0504fd170c0ab6a32cbe8cd9707495e0792cb434ed9e15c3c86939beb43f3",
+    "generated/r_tc_fabs_nfbot/full_expected_dense.hex": "810d7dd4b5f9acf8d45737f64699e319bc872faad6b783e9696f944b0b2a19b2",
+    "generated/r_tc_fabs_nfbot/full_expected_sparse.hex": "6eea44eeb710bb430cb52f4a7786cdf10ebd2e1422662df0638bb0c8f6aef5b5",
+    "generated/r_tc_fabs_nfbot/full_inputs.hex": "fa97ca26aec5cf1459ffcb16473402d74fae40294e189f5799d2c9a990914280",
+    "generated/r_tc_fabs_nfbot/network/network_l0_directions.hex": "90d8700ed31e2a805bdbb9ab5053c70c877d36e2aa8f0889d1334e67b46e3d75",
+    "generated/r_tc_fabs_nfbot/network/network_l0_masks.hex": "49456e9f1eabe0959079bd0a187b5f02a2862e8edd622baed42ce9a166206d28",
+    "generated/r_tc_fabs_nfbot/network/network_l0_thresholds.hex": "7664a1cc84563da2e532e8c776de21bb9b967ca6c8e158186affba2eaa32e0ad",
+    "generated/r_tc_fabs_nfbot/network/network_l0_weights.hex": "6d623b24e6383a264925e3ffec735c9ed1684aaa9711d8d1aa4f63f650ea1256",
+    "generated/r_tc_fabs_nfbot/network/network_l1_directions.hex": "7e27fda60b036dfddc8bfdd1f2007ff4fd65065c2f89b03a04ba3d0966e8a1be",
+    "generated/r_tc_fabs_nfbot/network/network_l1_thresholds.hex": "fafcf13419609fca65af2069f82be8674cd1b1d209aae4c4f7d8fbc958df5bae",
+    "generated/r_tc_fabs_nfbot/network/network_l2_directions.hex": "11639c936c3c80dce1912a912c9f19117bf86cd1b546cbfdb997b3b9790ddbf3",
+    "generated/r_tc_fabs_nfbot/network/network_l2_thresholds.hex": "71f3ef1ad2acdb96bf20b2f570b2a406c21197e59956255940c7787d49a22fb9",
+    "generated/r_tc_fabs_nfbot/network/network_output_threshold.hex": "a5afed188b9a5bdf0769b7054eee43be33a4dfce854d6331d5de0acc4c3f6c7f",
+    "generated/r_tc_fabs_nfbot/network/network_schedule_addresses.hex": "909bb535e7d33794418dd0b258d3810579a6b183eb1d6ecfe68459c32f10a89c",
+    "generated/r_tc_fabs_nfbot/network/network_schedule_last.hex": "8492bb93902da30fde87af6b9987671aea852a2dd86e39fe95e0e39fe13b6a55",
+    "generated/r_tc_fabs_nfbot/network/network_schedule_layers.hex": "ab2ffbe626c297b25080ed16e956f79701d88c3a1a923577074bb386c1f4e80e",
+    "generated/r_tc_fabs_nfbot/network/network_schedule_neurons.hex": "cf15a59fc0830022f0b323a3f893d8293e2ebca141c6eec538990f5b78a1f81a",
+    "generated/r_tc_fabs_nfbot/network/network_schedule_valid.hex": "e4f39c0e9d6a2091f36294a467d5a51a8987b1fc3831eeeab1d9a6fcdb6a48f1",
+    "generated/r_tc_fabs_nfbot/network/network_schedule_weights.hex": "bbc457d06bdfeccf15943760d3faa11e7db059b17733e3ad1af5ff826721621b",
+    "skip_activity.vcd": "f2ec44ade564860181ab22e519491a9670b920fd917fcf9489adcfdc7d57eb0f",
+    "baseline_activity.vcd": "4a993f67786451b7991f5e61d59de2f6700f8bf52fb2c16fd352daa11ced689b"
+  }
+}

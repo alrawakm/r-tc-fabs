@@ -1,0 +1,83 @@
+{
+  "status": "feasibility only; no novelty or hardware advantage established",
+  "policy": "natural order, groups of 16, first 256 stored vectors; fixed before run",
+  "vectors": 256,
+  "prediction_mismatches": 0,
+  "checkpoints": [
+    {
+      "first_layer_neurons_evaluated": 0,
+      "cumulative_certified": 0
+    },
+    {
+      "first_layer_neurons_evaluated": 16,
+      "cumulative_certified": 0
+    },
+    {
+      "first_layer_neurons_evaluated": 32,
+      "cumulative_certified": 0
+    },
+    {
+      "first_layer_neurons_evaluated": 48,
+      "cumulative_certified": 0
+    },
+    {
+      "first_layer_neurons_evaluated": 64,
+      "cumulative_certified": 0
+    },
+    {
+      "first_layer_neurons_evaluated": 80,
+      "cumulative_certified": 0
+    },
+    {
+      "first_layer_neurons_evaluated": 96,
+      "cumulative_certified": 0
+    },
+    {
+      "first_layer_neurons_evaluated": 112,
+      "cumulative_certified": 0
+    },
+    {
+      "first_layer_neurons_evaluated": 128,
+      "cumulative_certified": 0
+    },
+    {
+      "first_layer_neurons_evaluated": 144,
+      "cumulative_certified": 0
+    },
+    {
+      "first_layer_neurons_evaluated": 160,
+      "cumulative_certified": 0
+    },
+    {
+      "first_layer_neurons_evaluated": 176,
+      "cumulative_certified": 0
+    },
+    {
+      "first_layer_neurons_evaluated": 192,
+      "cumulative_certified": 0
+    },
+    {
+      "first_layer_neurons_evaluated": 208,
+      "cumulative_certified": 0
+    },
+    {
+      "first_layer_neurons_evaluated": 224,
+      "cumulative_certified": 0
+    },
+    {
+      "first_layer_neurons_evaluated": 240,
+      "cumulative_certified": 0
+    },
+    {
+      "first_layer_neurons_evaluated": 256,
+      "cumulative_certified": 256
+    }
+  ],
+  "mean_l0_neurons_evaluated": 256.0,
+  "mean_l0_cycles_only": 8448.0,
+  "baseline_cycles": 10116,
+  "static_cleanup_baseline_cycles": 9700,
+  "mean_break_even_total_certificate_cycles_vs_static_cleanup": 1252.0,
+  "qualification": "Certificate propagation cost is excluded from L0 cycles. Positive break-even budget is NOT a measured speedup. Full L0 precomputed only to emulate sequential reveal; unresolved activations are not exposed to the certificate.",
+  "input_sha256": "fa97ca26aec5cf1459ffcb16473402d74fae40294e189f5799d2c9a990914280"
+}
